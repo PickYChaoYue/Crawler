@@ -1,0 +1,18 @@
+<c3p0-config>
+
+
+    <!-- This app is massive! -->
+    <named-config name="helloc3p0">
+        <property name="user">root</property>
+        <property name="password">wangzer96+</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/girls</property>
+
+        <property name="acquireIncrement">50</property>
+        <property name="initialPoolSize">100</property>
+        <property name="minPoolSize">50</property>
+        <property name="maxPoolSize">1000</property>
+        <property name="maxStatements">0</property>
+
+    </named-config>
+</c3p0-config>
